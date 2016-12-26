@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/aztecrex/rpi-node-gpio/issues"
   },
-  "homepage": "https://github.com/aztecrex/rpi-node-gpio#readme"
+  "homepage": "https://github.com/aztecrex/rpi-node-gpio#readme",
+  "dependencies": {
+    "rpi-gpio": "^0.7.0"
+  }
 }
