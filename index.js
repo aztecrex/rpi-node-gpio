@@ -55,7 +55,7 @@ const flashes = (quantity, on_duration, off_duration, cb) => {
 };
 
 init(err => {
-  err || flashes(10, .1, .1, () => {
-    uninit(() => console.log("Done."));
+  err || flashes(30, .1, .1, () => {
+    uninit(() => 0);
   });
 });
