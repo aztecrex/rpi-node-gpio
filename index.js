@@ -6,8 +6,8 @@ const write = (val, cb) => {
     if (err) {
       console.log("cannot write ", val, " to ", pin);
       cb(err, res);
-    } else cb(null, true)
-  }
+    } else cb(null, true);
+  });
 };
 
 const init = cb => {
@@ -41,7 +41,7 @@ const flashes = (quantity, on_duration, off_duration, cb) => {
           else delay(on_duration, () => {
             write(false, err => {
               if (err) cb(err);
-              else delay(off_duration, ()) => {
+              else delay(off_duration, () => {
                 perform(rem - 1);
               });
             });
@@ -55,7 +55,7 @@ const flashes = (quantity, on_duration, off_duration, cb) => {
 };
 
 init(err => {
-  err || flashes(20, .5, .5, ()) => {
-    uninit();
+  err || flashes(10, .1, .1, () => {
+    uninit(() => console.log("Done."));
   });
 });
