@@ -15,16 +15,13 @@ sudo apt-get install nodejs
 
 ## Run it
 
-The program does not have permission to perform GPIO as a non-root user due to a
-race condition in
-[rpi-gpio](https://github.com/JamesBarwell/rpi-gpio.js). This is
-[addressed in a PR](https://github.com/JamesBarwell/rpi-gpio.js/pull/49).
-
-Meanwhile, you will have to `sudo` to perform GPIO operations from your programs.
-
-
-
 ```bash
 npm install # first time, only
 sudo node index.js
 ```
+
+Note this version temporarily depends on 'rpi-gpio-mod' which contains patches necessary to run as non-root.
+See [this issue](https://github.com/JamesBarwell/rpi-gpio.js/issues/48)
+for info.
+
+
