@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/aztecrex/rpi-node-gpio#readme",
   "dependencies": {
-    "rpi-gpio": "^0.7.0"
+    "rpi-gpio-mod": "^0.7.0"
   }
 }

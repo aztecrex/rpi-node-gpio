@@ -1,4 +1,4 @@
-const gpio = require("rpi-gpio");
+const gpio = require("rpi-gpio-mod");
 const pin = 40;
 
 const write = (val, cb) => {
